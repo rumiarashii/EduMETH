@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap');
+
+body{
+    background-color: white;
+    height: 100vh;
+    
+}
+
+*,
+html{
+margin: 0;
+padding: 0;
+}
+
+.container-navbar{
+  background: linear-gradient(135deg, #BFDCE5, #E8F7F0);
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.img-navbar {
+    height: 100%;
+    width: auto;
+}
+
+.h1-navbar{
+   display: flex;
+   height: 30px;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+   padding: 20px;
+   margin: auto;
+   color: #2F3E46;
+   font-style: bold;
+   font-family: 'Nunito Sans', sans-serif;;
+   transform: translateX(-30%);
+}
+
+.container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+    background: linear-gradient(135deg, #A8DADC, #F1FAEE);
+}
+
+.games-content {
+    width: 720px;
+  height: 480px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 8px;
+  background-color: rgba(0, 114, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: 'Nunito Sans', sans-serif;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1)
+}
+
+.games-content:hover {
+    background: linear-gradient(135deg, #A7C7E7, #E3D4F3);
+    transform: translateX(-2px);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+}
+
+.container-footer {
+    background: linear-gradient(135deg, #A8DADC, #F1FAEE);
+    color: #1D3557;
+    font-family: 'Poppins', sans-serif;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-left img, .footer-right img {
+    height: 60px;
+}
+
+.footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*QUIZ PAGE*/
+
+.games-header {
+    background: linear-gradient(135deg, #BFDCE5, #E8F7F0);
+    height: 8vh;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+
+    color: #1D3557;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .header-title {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #222;
+    padding: 10px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    transform: translateX(-27px);
+  }
+
+  .header-prevbtn {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #A8DADC, #F1FAEE);
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .header-prevbtn:hover {
+    background: rgba(0, 114, 255, 0.1); 
+    transform: translateX(-2px); 
+  }
+
+  /*CONTENT*/
+  .content-container {
+    flex: 1;
+    max-width: 700px;
+    max-height: fit-content;
+    width: 80vh;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #A8DADC, #F1FAEE);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .quiz-container {
+    flex: 1;
+    position: relative;
+    max-width: 700px;
+    padding-bottom: 40px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+.intro {
+  margin-bottom: 20px;
+  
+}
+
+.intro h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1D3557;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif; 
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  font-family: "Open Sans", sans-serif; 
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+  flex: 1;
+  max-width: 700px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #222;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+/*OPTION*/
+.options-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: grid;
+  grid-template-columns: 24px 5fr;
+  column-gap: 24px;
+  align-items: flex-start;
+  background: #fff;
+  border: none;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.option input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      margin: 2px 0 0 0;
+      cursor: pointer;
+      position: relative;
+      border: 2px solid #A8DADC;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+      display: inline-block;
+
+      
+      margin-right: 0.75rem;
+      transform: scale(1.2);
+}
+
+.option input[type="radio"]::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 10px; height: 10px;
+  background: #457B9D;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 120ms ease;
+}
+.option input[type="radio"]:checked::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.option input[type="radio"]:checked::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: #A8DADC;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.option:hover {
+  background: #F1FAEE;
+}
+
+.option span {
+  flex: 1;
+  font-size: 1.4rem;
+  color: #333;
+  font-family: "Open Sans", sans-serif; 
+}
+
+.option .label-text {
+  grid-column: 2;
+  line-height: 1.5;
+  color: #2b2e34;
+  font-size: 1rem;
+}
+
+.option:has(input[type="radio"]:checked) {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  background: #EEF7F7;
+}
+
+/*NAVIGATION BUTTON*/
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  
+  margin-top: 30px;
+  bottom: 30px;
+  left: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.button-navigation {
+  
+  pointer-events: auto;
+  background: #457B9D;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: linear-gradient(90deg, #A8DADC, #F1FAEE);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
+}
+.button-navigation:hover {
+  background: #1D3557;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+.button-navigation:disabled {
+  background: #C7D7E0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.progress-bar-container {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 8px;
+  background: #E5E7EB; 
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #457B9D, #1D3557);
+  transition: width 0.3s ease;
+}
+
+.button-finish {
+  margin-top: 110px;
+  padding: 10px 20px;
+  background-color: #1D3557;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
+}
+.button-finish:hover {
+  background-color: #457B9D;
+  transform: translateY(-2px);
+}
+
+.result-text {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #222;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+#gayaChart{
+  max-width: 500px;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+}
